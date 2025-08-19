@@ -20,5 +20,8 @@ public class BaseTest {
         driver.get(URL_BASE);
     }
 
-    
+    @AfterClass
+    public static void terminar(){
+        driver.quit();
+    }
 }
